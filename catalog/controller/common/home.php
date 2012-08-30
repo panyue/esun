@@ -11,8 +11,10 @@ class ControllerCommonHome extends Controller {
 		} else {
 			$this->template = 'default/template/common/home.tpl';
 		}
+			$this->load->model('catalog/category');	
 		
 		$this->children = array(
+			'common/top_branding',
 			'common/column_left',
 			'common/column_right',
 			'common/content_top',

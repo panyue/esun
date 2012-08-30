@@ -9,6 +9,7 @@ $_['text_content_top']     = '内容的上面';
 $_['text_content_bottom']  = '内容的底部';
 $_['text_column_left']     = '左列显示';
 $_['text_column_right']    = '右列显示';
+$_['text_top_branding']    = '顶部广告';
 
 // Entry
 $_['entry_banner']         = '横幅：';

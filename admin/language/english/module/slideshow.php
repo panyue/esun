@@ -5,6 +5,7 @@ $_['heading_title']       = 'Slideshow';
 // Text
 $_['text_module']         = 'Modules';
 $_['text_success']        = 'Success: You have modified module slideshow!';
+$_['text_top_branding']   = 'top_branding';
 $_['text_content_top']    = 'Content Top';
 $_['text_content_bottom'] = 'Content Bottom';
 $_['text_column_left']    = 'Column Left';

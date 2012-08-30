@@ -55,6 +55,11 @@
                   <?php } ?>
                 </select></td>
               <td class="left"><select name="slideshow_module[<?php echo $module_row; ?>][position]">
+				  <?php if ($module['position'] == 'top_branding') { ?>
+                  <option value="top_branding" selected="selected"><?php echo $text_top_branding; ?></option>
+                  <?php } else { ?>
+                  <option value="top_branding"><?php echo $text_top_branding; ?></option>
+                  <?php } ?>
                   <?php if ($module['position'] == 'content_top') { ?>
                   <option value="content_top" selected="selected"><?php echo $text_content_top; ?></option>
                   <?php } else { ?>
