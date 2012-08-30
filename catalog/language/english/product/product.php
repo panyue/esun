@@ -26,6 +26,7 @@ $_['text_upload']       = 'Your file was successfully uploaded!';
 $_['text_wait']         = 'Please Wait!';
 $_['text_tags']         = 'Tags:';
 $_['text_error']        = 'Product not found!';
+$_['text_video']        = 'Related Video';
 
 // Entry
 $_['entry_name']        = 'Your Name:';

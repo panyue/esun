@@ -6,6 +6,11 @@
     <?php } ?>
   </div>
   <h1><?php echo $heading_title; ?></h1>
+  <?php if ($video) { ?>
+         <div align="center">
+        <object width="785" height="480"><param name="movie" value="<?php echo $video; ?>"></param><param name="wmode" value="transparent"></param><embed src="<?php echo $video; ?>" type="application/x-shockwave-flash" wmode="transparent" width="785" height="480"></embed></object>
+</div>
+  <?php } ?>
   <div class="product-info">
     <?php if ($thumb || $images) { ?>
     <div class="left">

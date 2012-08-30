@@ -546,6 +546,7 @@ class ControllerCatalogProduct extends Controller {
 		$this->data['entry_description'] = $this->language->get('entry_description');
 		$this->data['entry_store'] = $this->language->get('entry_store');
 		$this->data['entry_keyword'] = $this->language->get('entry_keyword');
+		$this->data['entry_video'] = $this->language->get('entry_video');
     	$this->data['entry_model'] = $this->language->get('entry_model');
 		$this->data['entry_sku'] = $this->language->get('entry_sku');
 		$this->data['entry_upc'] = $this->language->get('entry_upc');
@@ -803,6 +804,14 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$this->data['keyword'] = '';
 		}
+		
+		if (isset($this->request->post['video'])) {
+		         $this->data['video'] = $this->request->post['video'];
+		      } elseif (isset($product_info)) {
+		         $this->data['video'] = $product_info['video'];
+		      } else {
+		         $this->data['video'] = '';
+		      }
 		
 		if (isset($this->request->post['image'])) {
 			$this->data['image'] = $this->request->post['image'];

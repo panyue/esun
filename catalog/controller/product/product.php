@@ -145,6 +145,7 @@ class ControllerProductProduct extends Controller {
 			$this->data['text_discount'] = $this->language->get('text_discount');
 			$this->data['text_option'] = $this->language->get('text_option');
 			$this->data['text_qty'] = $this->language->get('text_qty');
+			$this->data['text_video'] = $this->language->get('text_video');
 			$this->data['text_minimum'] = sprintf($this->language->get('text_minimum'), $product_info['minimum']);
 			$this->data['text_or'] = $this->language->get('text_or');
 			$this->data['text_write'] = $this->language->get('text_write');
@@ -177,6 +178,7 @@ class ControllerProductProduct extends Controller {
 			$this->data['manufacturer'] = $product_info['manufacturer'];
 			$this->data['manufacturers'] = $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']);
 			$this->data['model'] = $product_info['model'];
+			$this->data['video'] = $product_info['video'];
 			$this->data['reward'] = $product_info['reward'];
 			$this->data['points'] = $product_info['points'];
 			
