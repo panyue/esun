@@ -44,7 +44,7 @@ DD_belatedPNG.fix('#logo img');
 <?php echo $google_analytics; ?>
 </head>
 <body>
-<div id="container">
+<div id="header-frame">
 <div id="header">
   <?php if ($logo) { ?>
   <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
@@ -69,6 +69,8 @@ DD_belatedPNG.fix('#logo img');
   </div>
   <div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
 </div>
+</div>
+<div id="menu-frame">
 <?php if ($categories) { ?>
 <div id="menu">
   <ul>
@@ -93,4 +95,7 @@ DD_belatedPNG.fix('#logo img');
   </ul>
 </div>
 <?php } ?>
+</div>
+<div id="container">
 <div id="notification"></div>
+
