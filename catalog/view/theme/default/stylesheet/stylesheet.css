@@ -4,6 +4,8 @@ html {
 	padding: 0;
 }
 body {
+	background-image:url(../image/pattern/pattern_1.png);
+	background-repeat:repeat;
 	background-color: #ffffff;
 	color: #000000;
 	font-family: Arial, Helvetica, sans-serif;
@@ -90,7 +92,7 @@ label {
 }
 /* header */
 #header {
-	height: 90px;
+	height: 125px;
 	margin-bottom: 7px;
 	padding-bottom: 4px;
 	position: relative;
@@ -103,9 +105,8 @@ label {
 }
 #language {
 	position: absolute;
-	top: 15px;
-	left: 320px;
-	width: 80px;
+	top:  	5px;
+	left: 300px;
 	color: #999;
 	line-height: 17px;
 }
@@ -114,9 +115,9 @@ label {
 	margin-right: 5px;
 }
 #currency {
-	width: 75px;
+	width: 175px;
 	position: absolute;
-	top: 15px;
+	top: 2px;
 	left: 425px;
 	color: #999;
 	line-height: 17px;
@@ -136,20 +137,19 @@ label {
 }
 #header #cart {
 	position: absolute;
-	top: 0px;
-	right: 145px;
+	top: 53px;
+	right: 0px;
 	z-index: 9;
 	min-width: 300px;
 }
 #header #cart .heading {
 	float: right;
-	margin-right: 172px;
 	margin-top: 15px;
 	padding-left: 14px;
 	padding-right: 14px;
-	border-top: 1px solid #FFFFFF;
-	border-left: 1px solid #FFFFFF;
-	border-right: 1px solid #EEEEEE;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
 	background: #FFF;
 	position: relative;
 	z-index: 1;
@@ -259,8 +259,8 @@ label {
 }
 #header #search {
 	position: absolute;
-	top: 15px;
-	right: 0px;
+	top: 60px;
+	left: 300px;
 	width: 298px;
 	z-index: 15;
 }
@@ -268,16 +268,16 @@ label {
 	position: absolute;
 	left: 0px;
 	background: url('../image/button-search.png') center center no-repeat;
-	width: 28px;
-	height: 24px;
+	width: 38px;
+	height: 38px;
 	border-right: 1px solid #CCCCCC;
 	cursor: pointer;
 }
 #header #search input {
 	background: #FFF;
-	padding: 1px 1px 1px 33px;
+	padding: 1px 1px 1px 43px;
 	width: 262px;
-	height: 21px;
+	height: 38px;
 	border: 1px solid #CCCCCC;
 	-webkit-border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
@@ -297,9 +297,10 @@ label {
 	color: #999999;
 }
 #header .links {
+	line-height: 17px;
 	position: absolute;
 	right: 0px;
-	bottom: 3px;
+	top: 5px;
 	font-size: 10px;
 	padding-right: 10px;
 }
@@ -321,10 +322,11 @@ label {
 	border-bottom: 1px solid #000000;
 	height: 37px;
 	margin-bottom: 15px;
-	-webkit-border-radius: 5px 5px 5px 5px;
+/*	-webkit-border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-khtml-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
+	*/
 	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
 	-moz-box-shadow: 0px 2px 2px #DDDDDD;
 	box-shadow: 0px 2px 2px #DDDDDD;
