@@ -1,3 +1,5 @@
+//  #90bd07 /*(theme-color)*/
+
 html {
 	overflow: -moz-scrollbars-vertical;
 	margin: 0;
@@ -35,7 +37,7 @@ p {
 	margin-bottom: 20px;
 }
 a, a:visited, a b {
-	color: #38B0E3;
+	color: #000;
 	text-decoration: underline;
 	cursor: pointer;
 }
@@ -70,9 +72,9 @@ label {
 	
 }
 #menu-frame {
-	background: #585858;
+	background: #90bd07 /*(theme-color)*/;
 	border-bottom: 1px solid #000000;
-	height: 37px;
+	height: 50px;
 	margin-bottom: 15px;
 /*	-webkit-border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -118,7 +120,7 @@ label {
 }
 #header #logo {
 	position: inherit;
-	top: 25px;
+	top: 37px;
 	left: 15px;
 }
 #language {
@@ -326,7 +328,7 @@ label {
 	float: left;
 	display: block;
 	padding: 0px 0px 0px 7px;
-	color: #38B0E3;
+	color: #000;
 	text-decoration: none;
 	font-size: 12px;
 }
@@ -347,27 +349,23 @@ label {
 	position: relative;
 	float: left;
 	z-index: 20;
-	padding: 6px 5px 5px 0px;
+	padding: 0px;
 }
 #menu > ul > li:hover {
 }
 #menu > ul > li > a {
-	font-size: 13px;
+	font-size: 14px;
 	color: #FFF;
-	line-height: 14px;
+	line-height: 48px;
 	text-decoration: none;
 	display: block;
-	padding: 6px 10px 6px 10px;
-	margin-bottom: 5px;
+	padding: 1px 10px 1px 10px;
+	margin: 1px 0px 1px 0px;
 	z-index: 6;
 	position: relative;
 }
 #menu > ul > li:hover > a {
-	background: #000000;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-khtml-border-radius: 5px;
-	border-radius: 5px;
+	background: #000;
 }
 #menu > ul > li > div {
 	display: none;
