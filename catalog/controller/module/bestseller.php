@@ -52,10 +52,10 @@ class ControllerModuleBestSeller extends Controller {
 			);
 		}
 
-		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/bestseller.tpl')) {
-			$this->template = $this->config->get('config_template') . '/template/module/bestseller.tpl';
+		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/grid.tpl')) {
+			$this->template = $this->config->get('config_template') . '/template/module/grid.tpl';
 		} else {
-			$this->template = 'default/template/module/bestseller.tpl';
+			$this->template = 'default/template/module/grid.tpl';
 		}
 
 		$this->render();
