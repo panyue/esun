@@ -80,6 +80,7 @@ DD_belatedPNG.fix('#logo img');
 <?php if ($categories) { ?>
 <div id="menu">
   <ul>
+	<li><a href="<?php echo $home; ?>" ><?php echo $text_home; ?> </a>
     <?php foreach ($categories as $category) { ?>
     <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
       <?php if ($category['children']) { ?>
