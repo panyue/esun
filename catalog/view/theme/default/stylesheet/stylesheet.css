@@ -119,7 +119,7 @@ label {
 	z-index: 99;
 }
 #header #logo {
-	display:none;
+	display:block;
 	position: inherit;
 	top: 37px;
 	left: 15px;
@@ -853,6 +853,14 @@ a.button:hover, input.button:hover {
 	display:none;
 }
 
+.wishlist {
+	display:none;
+}
+
+.compare {
+	display:none;
+}
+
 .product-filter {
 	border-bottom: 1px solid #EEEEEE;
 	padding-bottom: 5px;
@@ -945,6 +953,7 @@ a.button:hover, input.button:hover {
 .product-list .cart {
 	margin-bottom: 3px;
 }
+
 .product-list .wishlist, .product-list .compare {
 	margin-bottom: 3px;
 }
