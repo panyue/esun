@@ -178,6 +178,7 @@ label {
 	text-decoration: none;
 }
 #header #cart {
+	display:none;
 	position: absolute;
 	top: 53px;
 	right: 0px;
@@ -330,6 +331,7 @@ label {
 	box-shadow: 0px 2px 0px #F0F0F0;
 }
 #header #welcome {
+	display: none;
 	position: absolute;
 	top: 47px;
 	right: 0px;
@@ -339,6 +341,7 @@ label {
 	color: #999999;
 }
 #top-bar .links {
+	display: none;
 	line-height: 17px;
 	position: absolute;
 	left: 324px;
@@ -846,6 +849,10 @@ a.button:hover, input.button:hover {
 	margin-bottom: 10px;
 }
 /* product */
+.cart {
+	display:none;
+}
+
 .product-filter {
 	border-bottom: 1px solid #EEEEEE;
 	padding-bottom: 5px;
@@ -870,6 +877,7 @@ a.button:hover, input.button:hover {
 	color: #333;
 }
 .product-compare {
+	display:none;
 	padding-top: 6px;
 	margin-bottom: 25px;
 	font-weight: bold;
@@ -941,17 +949,17 @@ a.button:hover, input.button:hover {
 	margin-bottom: 3px;
 }
 .product-list .wishlist a {
+	display:none;
 	color: #333333;
 	text-decoration: none;
 	padding-left: 18px;
-	display: block;
 	background: url('../image/add.png') left center no-repeat;
 }
 .product-list .compare a {
 	color: #333333;
 	text-decoration: none;
 	padding-left: 18px;
-	display: block;
+	display: none;
 	background: url('../image/add.png') left 60% no-repeat;
 }
 .product-grid {

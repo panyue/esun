@@ -17,6 +17,7 @@
       <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
     </ul>
   </div>
+  <!-- delete extra and account
   <div class="column">
     <h3><?php echo $text_extra; ?></h3>
     <ul>
@@ -35,6 +36,7 @@
       <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
     </ul>
   </div>
+  -->
 </div>
   <div id="powered"><?php echo $powered; ?></div>
 </div>
