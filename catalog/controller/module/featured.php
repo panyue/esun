@@ -48,11 +48,12 @@ class ControllerModuleFeatured extends Controller {
 				} else {
 					$rating = false;
 				}
-					
+				$this->data['text_model'] = $this->language->get('text_model');	
 				$this->data['products'][] = array(
 					'product_id' => $product_info['product_id'],
 					'thumb'   	 => $image,
 					'name'    	 => $product_info['name'],
+					'model'      => $product_info['model'],
 					'price'   	 => $price,
 					'special' 	 => $special,
 					'rating'     => $rating,
