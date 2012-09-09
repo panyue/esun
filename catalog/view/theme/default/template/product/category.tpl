@@ -73,6 +73,7 @@
       <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
       <?php } ?>
       <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+	  <div class="model"><a href="<?php echo $product['href']; ?>"><?php echo $product['model']; ?></a></div>
       <div class="description"><?php echo $product['description']; ?></div>
       <?php if ($product['price']) { ?>
       <div class="price">
@@ -134,6 +135,7 @@ function display(view) {
 			}
 					
 			html += '  <div class="name">' + $(element).find('.name').html() + '</div>';
+			html += '  <div class="model">' + $(element).find('.model').html() + '</div>';
 			html += '  <div class="description">' + $(element).find('.description').html() + '</div>';
 			
 			var rating = $(element).find('.rating').html();
@@ -164,6 +166,8 @@ function display(view) {
 			}
 			
 			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
+			html += '<div class="model">' + $(element).find('.model').html() + '</div>';
+
 			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
 			
 			var price = $(element).find('.price').html();
@@ -196,7 +200,7 @@ view = $.cookie('display');
 if (view) {
 	display(view);
 } else {
-	display('list');
+	display('grid');
 }
 //--></script> 
 <?php echo $footer; ?>

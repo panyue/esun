@@ -301,6 +301,7 @@ label {
 	text-align: center;
 }
 #header #search {
+	display: none;
 	position: absolute;
 	top: 60px;
 	left: 300px;
@@ -862,6 +863,7 @@ a.button:hover, input.button:hover {
 }
 
 .product-filter {
+	display: none;
 	border-bottom: 1px solid #EEEEEE;
 	padding-bottom: 5px;
 	overflow: auto;
