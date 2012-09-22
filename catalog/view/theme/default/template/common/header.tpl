@@ -80,7 +80,7 @@ DD_belatedPNG.fix('#logo img');
 <?php if ($categories) { ?>
 <div id="menu">
   <ul>
-	<li><a href="<?php echo $home; ?>" ><?php echo $text_home; ?> </a>
+	<li><a href="<?php echo $home; ?>" ><?php echo $text_home; ?> </a></li>
     <?php foreach ($categories as $category) { ?>
     <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
       <?php if ($category['children']) { ?>
@@ -99,7 +99,21 @@ DD_belatedPNG.fix('#logo img');
       <?php } ?>
     </li>
     <?php } ?>
-  </ul>
+	<?php if ($informations) { ?>
+		<?php foreach ($informations as $information) { ?>
+			<?php if ($information['title'] == 'About Us') { ?>
+				<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+			<?php } ?>
+		<?php } ?>
+	<?php } ?>
+
+	<li><a href="<?php echo $contact; ?>" ><?php echo $text_contact; ?></a></li>
+	</ul>
+      
+    </ul>
+  </div>
+  
+  
 </div>
 <?php } ?>
 </div>

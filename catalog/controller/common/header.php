@@ -73,6 +73,8 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_logged'] = sprintf($this->language->get('text_logged'), $this->url->link('account/account', '', 'SSL'), $this->customer->getFirstName(), $this->url->link('account/logout', '', 'SSL'));
 		$this->data['text_account'] = $this->language->get('text_account');
     	$this->data['text_checkout'] = $this->language->get('text_checkout');
+    	$this->data['text_about'] = $this->language->get('text_about');
+    	$this->data['text_contact'] = $this->language->get('text_contact');
 				
 		$this->data['home'] = $this->url->link('common/home');
 		$this->data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
@@ -80,6 +82,9 @@ class ControllerCommonHeader extends Controller {
 		$this->data['account'] = $this->url->link('account/account', '', 'SSL');
 		$this->data['shopping_cart'] = $this->url->link('checkout/cart');
 		$this->data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
+		$this->data['about'] = $this->url->link('common/home');
+		$this->data['contact'] = $this->url->link('information/contact');
+
 		
 		if (isset($this->request->get['filter_name'])) {
 			$this->data['filter_name'] = $this->request->get['filter_name'];
@@ -125,6 +130,20 @@ class ControllerCommonHeader extends Controller {
 				);
 			}
 		}
+		//infomation
+		$this->load->model('catalog/information');
+		
+		$this->data['informations'] = array();
+
+		foreach ($this->model_catalog_information->getInformations() as $result) {
+			if ($result['bottom']) {
+				$this->data['informations'][] = array(
+					'title' => $result['title'],
+					'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+				);
+			}
+    	}
+		
 		
 		$this->children = array(
 			'module/language',
