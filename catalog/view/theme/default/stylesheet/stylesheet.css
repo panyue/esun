@@ -132,7 +132,7 @@ label {
 }
 #top-bar {
 	position:absolute;
-	left:-200px;
+	left:200px;
 	right: 0px;
 	background-color:#eee;
 	height:27px;
@@ -301,16 +301,14 @@ label {
 	text-align: center;
 }
 #header #search {
-	display: none;
-	position: absolute;
-	top: 60px;
-	left: 300px;
+	display: block;
+	float:right;
+	margin-top: 30px;
 	width: 298px;
 	z-index: 15;
 }
 #header .button-search {
 	position: absolute;
-	left: 0px;
 	background: url('../image/button-search.png') center center no-repeat;
 	width: 38px;
 	height: 38px;
@@ -318,6 +316,7 @@ label {
 	cursor: pointer;
 }
 #header #search input {
+	color: #CCCCCC;
 	background: #FFF;
 	padding: 1px 1px 1px 43px;
 	width: 262px;
