@@ -6,11 +6,11 @@ html {
 	padding: 0;
 }
 body {
-	background-image:url(../image/pattern/pattern_12.png);
+	background-image:url(../image/pattern/pattern_1.png);
 	background-repeat:repeat;
 	background-color: #ffffff;
 	color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
@@ -72,19 +72,18 @@ label {
 	
 }
 #menu-frame {
-	background: #90bd07 /*(theme-color)*/;
-	border-bottom: 1px solid #fff;
-	height: 50px;
-	margin-bottom: 15px;
+	background-image:url(../image/menu_bg.png);
+	height: 53px;
+	margin-bottom: 36px;
 /*	-webkit-border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-khtml-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
-	*/
 	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
 	-moz-box-shadow: 0px 2px 2px #DDDDDD;
 	box-shadow: 0px 2px 2px #DDDDDD;
 	padding: 0px 5px;
+	*/
 }
 #container, #header, #menu{
 	width: 980px;
@@ -112,7 +111,7 @@ label {
 }
 /* header */
 #header {
-	height: 125px;
+	height: 113px;
 	margin-bottom: 7px;
 	padding-bottom: 4px;
 	position: relative;
@@ -121,8 +120,7 @@ label {
 #header #logo {
 	display:block;
 	position: inherit;
-	top: 37px;
-	left: 15px;
+	top: 14px;
 }
 #top-bar-frame {
 	position:absolute;
@@ -132,7 +130,7 @@ label {
 }
 #top-bar {
 	position:absolute;
-	left:200px;
+	left:370px;
 	right: 0px;
 	background-color:#eee;
 	height:27px;
@@ -149,7 +147,6 @@ label {
 #language {
 	position: absolute;
 	top:  	5px;
-	left: 150px;
 	color: #999;
 	line-height: 17px;
 }
@@ -158,6 +155,7 @@ label {
 	margin-right: 5px;
 }
 #currency {
+	display:none;
 	width: 175px;
 	position: absolute;
 	top: 2px;
@@ -302,33 +300,30 @@ label {
 }
 #header #search {
 	display: block;
-	float:right;
-	margin-top: 30px;
-	width: 298px;
+	position:absolute;
+	right:0px;
+	top: 77px;
+	width: 250px;
 	z-index: 15;
 }
 #header .button-search {
 	position: absolute;
 	background: url('../image/button-search.png') center center no-repeat;
 	width: 38px;
-	height: 38px;
-	border-right: 1px solid #CCCCCC;
+	height: 36px;
 	cursor: pointer;
 }
 #header #search input {
 	color: #CCCCCC;
 	background: #FFF;
 	padding: 1px 1px 1px 43px;
-	width: 262px;
-	height: 38px;
+	width: 208px;
+	height: 36px;
 	border: 1px solid #CCCCCC;
-	-webkit-border-radius: 3px 3px 3px 3px;
-	-moz-border-radius: 3px 3px 3px 3px;
-	-khtml-border-radius: 3px 3px 3px 3px;
-	border-radius: 3px 3px 3px 3px;
-	-webkit-box-shadow: 0px 2px 0px #F0F0F0;
-	-moz-box-shadow: 0px 2px 0px #F0F0F0;
-	box-shadow: 0px 2px 0px #F0F0F0;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-khtml-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
 }
 #header #welcome {
 	display: none;
@@ -378,26 +373,33 @@ label {
 #menu > ul > li:hover {
 }
 #menu > ul > li > a {
+	text-align:center;
 	font-size: 14px;
-	color: #FFF;
+	color: #000;
 	line-height: 50px;
+	width:120px;
 	text-decoration: none;
 	display: block;
-	padding: 1px 10px 1px 10px;
-	margin: -1px 0px -1px 0px;
 	z-index: 6;
 	position: relative;
 }
+#menu-left {
+	display:block;
+	width:24px;
+	height:49px;
+	background-image:url(../image/menu_left.png);
+}
 #menu > ul > li:hover > a {
-	background: #000;
+	background-image:url(../image/menu_item_bg.png);
+	background-repeat:no-repeat;
+	//background: #000;
+	color:#fff;
 }
 #menu > ul > li > div {
 	display: none;
 	background: #FFFFFF;
 	position: absolute;
 	z-index: 5;
-	margin-top: 1px;
-	padding: 5px;
 	border: 1px solid #000000;
 	-webkit-border-radius: 0px 0px 5px 5px;
 	-moz-border-radius: 0px 0px 5px 5px;
@@ -416,7 +418,7 @@ label {
 }
 #menu > ul > li ul > li > a {
 	text-decoration: none;
-	padding: 4px;
+	padding: 9px;
 	color: #FFFFFF;
 	display: block;
 	white-space: nowrap;
@@ -680,17 +682,14 @@ a.button:hover, input.button:hover {
 	margin-bottom: 20px;
 }
 .box .box-heading {
-	-webkit-border-radius: 7px 7px 0px 0px;
-	-moz-border-radius: 7px 7px 0px 0px;
-	-khtml-border-radius: 7px 7px 0px 0px;
-	border-radius: 7px 7px 0px 0px;
-	border: 1px solid #DBDEE1;
-	background: url('../image/background.png') repeat-x;
-	padding: 8px 10px 7px 10px;
-	font-family: Arial, Helvetica, sans-serif;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+
+	background: url('../image/box_heading_bg.png') repeat-x;
+	padding: 0px 0px 0px 10px;
+	font-family: Helvetica, sans-serif;
 	font-size: 14px;
-	font-weight: bold;
-	line-height: 14px;
+	line-height: 32px;
 	color: #333;
 }
 .box .box-content {
