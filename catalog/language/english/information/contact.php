@@ -10,6 +10,7 @@ $_['text_email']     = 'E-Mail:';
 $_['text_telephone'] = 'Telephone:';
 $_['text_fax']       = 'Fax:';
 $_['text_message']   = '<p>Your enquiry has been successfully sent to the store owner!</p>';
+$_['text_submit']    = 'Submit';
 
 // Entry Fields
 $_['entry_name']     = 'First Name:';

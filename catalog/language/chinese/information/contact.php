@@ -10,6 +10,7 @@ $_['text_email']     = '邮箱：';
 $_['text_telephone'] = '电话：';
 $_['text_fax']       = '传真：';
 $_['text_message']   = '<p>您的查询已发送！</p>';
+$_['text_submit']    = '提交';
 
 // Entry Fields
 $_['entry_name']     = '您的姓名：';
