@@ -74,10 +74,8 @@
               <td><input type="text" name="quantity" value="<?php echo $quantity; ?>" size="2" /></td>
             </tr>
 			<tr>
-              <td><?php echo $entry_dimension; ?></td>
-              <td><input type="text" name="length" value="<?php echo $length; ?>" size="4" />
-                <input type="text" name="width" value="<?php echo $width; ?>" size="4" />
-                <input type="text" name="height" value="<?php echo $height; ?>" size="4" /></td>
+              <td><?php echo $entry_isbn; ?></td>
+              <td><input type="text" name="isbn" value="<?php echo $isbn; ?>" /></td>
             </tr>
             <tr>
               <td><?php echo $entry_upc; ?></td>
@@ -104,16 +102,18 @@
 				<td/><td/>
 			</tr>
             <tr>
-              <td><?php echo $entry_isbn; ?></td>
-              <td><input type="text" name="isbn" value="<?php echo $isbn; ?>" /></td>
-            </tr>
-            <tr>
               <td><?php echo $entry_mpn; ?></td>
               <td><input type="text" name="mpn" value="<?php echo $mpn; ?>" /></td>
             </tr>
             <tr>
               <td><?php echo $entry_location; ?></td>
               <td><input type="text" name="location" value="<?php echo $location; ?>" /></td>
+            </tr>
+			<tr>
+              <td><?php echo $entry_dimension; ?></td>
+              <td><input type="text" name="length" value="<?php echo $length; ?>" size="4" />
+                <input type="text" name="width" value="<?php echo $width; ?>" size="4" />
+                <input type="text" name="height" value="<?php echo $height; ?>" size="4" /></td>
             </tr>
             <tr>
               <td><?php echo $entry_price; ?></td>
