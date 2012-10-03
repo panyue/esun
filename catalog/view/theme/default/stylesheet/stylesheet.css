@@ -783,7 +783,7 @@ a.button:hover, input.button:hover {
 	padding: 0;
 }
 .box-category > ul > li {
-	padding: 8px 8px 8px 0px;
+	padding: 8px 8px 0px 0px;
 }
 .box-category > ul > li + li {
 	//border-top: 1px solid #ebebeb;
@@ -1074,6 +1074,7 @@ a.button:hover, input.button:hover {
 /* Product */
 .video {
 	margin-left:10px;
+	margin-bottom: 5px;
 }
 
 .video > object{
@@ -1084,6 +1085,16 @@ a.button:hover, input.button:hover {
 	font-size: 14px;
 	padding-left:7px;
 	margin-bottom:10px;
+}
+#metrics >tbody >tr >td:first-child {
+		color :#999;
+		width: 140px;
+		text-align: right;
+		padding-right: 15px;
+}
+
+#metrics >tbody >tr >td {
+		font-size :14px;
 }
 .product-info {
 	overflow: auto;

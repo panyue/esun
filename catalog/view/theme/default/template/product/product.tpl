@@ -13,16 +13,43 @@
 </div>
   <?php } ?>
   <div class="product-info">
-    <div class="metric">
       <div class="description">
+	  <table id="metrics">
+	  <tr>
+		<td><?php echo $text_model; ?></td> <td> <?php echo $model; ?></td>
+	  </tr>
+	  <tr>
+		<?php if ($sku) { ?>
+        <td><?php echo $text_sku; ?></td> <td> <?php echo $sku; ?></td>
+        <?php } ?>
+	</tr>
+	  <tr>
+		<?php if ($isbn) { ?>
+        <td><?php echo $text_isbn; ?></td> <td> <?php echo $isbn; ?></td>
+        <?php } ?>
+	</tr>
+	  <tr>
+		<?php if ($upc) { ?>
+        <td><?php echo $text_upc; ?></td> <td> <?php echo $upc; ?></td>
+        <?php } ?>
+	  </tr>
+	  <tr>
+		<?php if ($jan) { ?>
+        <td><?php echo $text_jan; ?></td> <td> <?php echo $jan; ?></td>
+        <?php } ?>
+	</tr>
+	  <tr>
+		<?php if ($ean) { ?>
+        <td><?php echo $text_ean; ?></td> <td> <?php echo $ean; ?></td>
+        <?php } ?>
+	</tr>
+	</table>
         <?php if ($manufacturer) { ?>
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
         <?php } ?>
-        <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
         <?php if ($reward) { ?>
         <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
         <?php } ?>
-        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?></div>
       <?php if ($price) { ?>
       <div class="price"><?php echo $text_price; ?>
         <?php if (!$special) { ?>
@@ -217,7 +244,6 @@
         </div>
       </div>
       <?php } ?>
-    </div>
   </div>
   <div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
     <?php if ($attribute_groups) { ?>
@@ -324,6 +350,7 @@
   </div>
   <?php } ?>
   <?php echo $content_bottom; ?></div>
+</div>
 <script type="text/javascript"><!--
 $('.colorbox').colorbox({
 	overlayClose: true,
