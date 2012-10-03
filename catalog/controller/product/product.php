@@ -126,12 +126,12 @@ class ControllerProductProduct extends Controller {
 				'separator' => $this->language->get('text_separator')
 			);			
 			
-			$this->document->setTitle($product_info['name']);
+			$this->document->setTitle($product_info['model']);
 			$this->document->setDescription($product_info['meta_description']);
 			$this->document->setKeywords($product_info['meta_keyword']);
 			$this->document->addLink($this->url->link('product/product', 'product_id=' . $this->request->get['product_id']), 'canonical');
 			
-			$this->data['heading_title'] = $product_info['name'];
+			$this->data['heading_title'] = $product_info['model'];
 			
 			$this->data['text_select'] = $this->language->get('text_select');
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
@@ -181,6 +181,7 @@ class ControllerProductProduct extends Controller {
 			$this->data['video'] = $product_info['video'];
 			$this->data['reward'] = $product_info['reward'];
 			$this->data['points'] = $product_info['points'];
+			$this->data['name'] = $product_info['name'];
 			
 			if ($product_info['quantity'] <= 0) {
 				$this->data['stock'] = $product_info['stock_status'];
