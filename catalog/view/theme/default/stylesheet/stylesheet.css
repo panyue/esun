@@ -75,10 +75,7 @@ label {
 	background-image:url(../image/menu_bg.png);
 	height: 53px;
 	margin-bottom: 36px;
-/*	-webkit-border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-khtml-border-radius: 5px 5px 5px 5px;
-	border-radius: 5px 5px 5px 5px;
+/*	
 	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
 	-moz-box-shadow: 0px 2px 2px #DDDDDD;
 	box-shadow: 0px 2px 2px #DDDDDD;
@@ -92,8 +89,15 @@ label {
 	text-align: left;
 }
 #column-left {
+	border-right: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;	
+	border-bottom: 1px solid #ebebeb;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-khtml-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
 	float: left;
-	width: 180px;
+	width: 155px;
 }
 #column-right {
 	float: right;
@@ -104,7 +108,7 @@ label {
 	margin-bottom: 25px;
 }
 #column-left + #column-right + #content, #column-left + #content {
-	margin-left: 195px;
+	margin-left: 163px;
 }
 #column-right + #content {
 	margin-right: 195px;
@@ -693,14 +697,15 @@ a.button:hover, input.button:hover {
 	color: #333;
 }
 .box .box-content {
-	background: #FFFFFF;
+	font-family: Helvetica, sans-serif;
+	//background: #FFFFFF;
 	-webkit-border-radius: 0px 0px 7px 7px;
 	-moz-border-radius: 0px 0px 7px 7px;
 	-khtml-border-radius: 0px 0px 7px 7px;
 	border-radius: 0px 0px 7px 7px;
-	border-left: 1px solid #DBDEE1;
-	border-right: 1px solid #DBDEE1;
-	border-bottom: 1px solid #DBDEE1;
+//	border-left: 1px solid #DBDEE1;
+//	border-right: 1px solid #DBDEE1;
+//	border-bottom: 1px solid #DBDEE1;
 	padding: 10px;
 }
 /* box products */
@@ -723,18 +728,18 @@ a.button:hover, input.button:hover {
 	margin-bottom: 0px;
 }
 .box-product .image img {
-	padding: 3px;
-	border: 1px solid #E7E7E7;
+	border: 1px solid #fff;
+}
+.box-product .image img:hover{
+	border: 1px solid #ef7d00;
 }
 .box-product .name a {
-	color: #38B0E3;
-	font-weight: bold;
 	text-decoration: none;
 	display: block;
 	margin-bottom: 4px;
 }
 .box-product .price {
-	display: block;
+	display: none;
 	font-weight: bold;
 	color: #333333;
 	margin-bottom: 4px;
@@ -763,7 +768,7 @@ a.button:hover, input.button:hover {
 	padding: 8px 8px 8px 0px;
 }
 .box-category > ul > li + li {
-	border-top: 1px solid #EEEEEE;
+	//border-top: 1px solid #ebebeb;
 }
 .box-category > ul > li > a {
 	text-decoration: none;
@@ -774,10 +779,15 @@ a.button:hover, input.button:hover {
 }
 .box-category > ul > li a.active {
 	font-weight: bold;
+	color: #ef7d00;
+}
+.box-category > ul > li :hover {
+	color: #ef7d00;
 }
 .box-category > ul > li a.active + ul {
 	display: block;
 }
+
 .box-category > ul > li ul > li {
 	padding: 5px 5px 0px 10px;
 }
@@ -1628,6 +1638,7 @@ a.button:hover, input.button:hover {
 }
 /* footer */ 
 #footer {
+	display: none;
 	clear: both;
 	overflow: auto;
 	min-height: 100px;
