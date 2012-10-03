@@ -23,6 +23,11 @@
         <td><?php echo $text_sku; ?></td> <td> <?php echo $sku; ?></td>
         <?php } ?>
 	</tr>
+	<tr>
+		<?php if ($quantity) { ?>
+        <td><?php echo $text_quantity; ?></td> <td> <?php echo $quantity; ?></td>
+        <?php } ?>
+	</tr>
 	  <tr>
 		<?php if ($isbn) { ?>
         <td><?php echo $text_isbn; ?></td> <td> <?php echo $isbn; ?></td>
