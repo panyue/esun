@@ -5,28 +5,15 @@
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1><?php echo $heading_title; ?></h1>
+  <h1><?php echo $text_model; ?><?php echo $heading_title; ?></h1>
+  <div id="product-name"><?php echo $name; ?></div>
   <?php if ($video) { ?>
-         <div align="center">
+         <div class = "video">
         <object width="785" height="480"><param name="movie" value="<?php echo $video; ?>"></param><param name="wmode" value="transparent"></param><embed src="<?php echo $video; ?>" type="application/x-shockwave-flash" wmode="transparent" width="785" height="480"></embed></object>
 </div>
   <?php } ?>
   <div class="product-info">
-    <?php if ($thumb || $images) { ?>
-    <div class="left">
-      <?php if ($thumb) { ?>
-      <div class="image"><a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="colorbox" rel="colorbox"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a></div>
-      <?php } ?>
-      <?php if ($images) { ?>
-      <div class="image-additional">
-        <?php foreach ($images as $image) { ?>
-        <a href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>" class="colorbox" rel="colorbox"><img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>
-        <?php } ?>
-      </div>
-      <?php } ?>
-    </div>
-    <?php } ?>
-    <div class="right">
+    <div class="metric">
       <div class="description">
         <?php if ($manufacturer) { ?>
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
