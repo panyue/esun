@@ -6,56 +6,6 @@
     <?php } ?>
   </div>
   <h1><?php echo $heading_title; ?></h1>
-  <b><?php echo $text_critea; ?></b>
-  <div class="content">
-    <p><?php echo $entry_search; ?>
-      <?php if ($filter_name) { ?>
-      <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
-      <?php } else { ?>
-      <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" onclick="this.value = '';" onkeydown="this.style.color = '000000'" style="color: #999;" />
-      <?php } ?>
-      <select name="filter_category_id">
-        <option value="0"><?php echo $text_category; ?></option>
-        <?php foreach ($categories as $category_1) { ?>
-        <?php if ($category_1['category_id'] == $filter_category_id) { ?>
-        <option value="<?php echo $category_1['category_id']; ?>" selected="selected"><?php echo $category_1['name']; ?></option>
-        <?php } else { ?>
-        <option value="<?php echo $category_1['category_id']; ?>"><?php echo $category_1['name']; ?></option>
-        <?php } ?>
-        <?php foreach ($category_1['children'] as $category_2) { ?>
-        <?php if ($category_2['category_id'] == $filter_category_id) { ?>
-        <option value="<?php echo $category_2['category_id']; ?>" selected="selected">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $category_2['name']; ?></option>
-        <?php } else { ?>
-        <option value="<?php echo $category_2['category_id']; ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $category_2['name']; ?></option>
-        <?php } ?>
-        <?php foreach ($category_2['children'] as $category_3) { ?>
-        <?php if ($category_3['category_id'] == $filter_category_id) { ?>
-        <option value="<?php echo $category_3['category_id']; ?>" selected="selected">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $category_3['name']; ?></option>
-        <?php } else { ?>
-        <option value="<?php echo $category_3['category_id']; ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $category_3['name']; ?></option>
-        <?php } ?>
-        <?php } ?>
-        <?php } ?>
-        <?php } ?>
-      </select>
-      <?php if ($filter_sub_category) { ?>
-      <input type="checkbox" name="filter_sub_category" value="1" id="sub_category" checked="checked" />
-      <?php } else { ?>
-      <input type="checkbox" name="filter_sub_category" value="1" id="sub_category" />
-      <?php } ?>
-      <label for="sub_category"><?php echo $text_sub_category; ?></label>
-    </p>
-    <?php if ($filter_description) { ?>
-    <input type="checkbox" name="filter_description" value="1" id="description" checked="checked" />
-    <?php } else { ?>
-    <input type="checkbox" name="filter_description" value="1" id="description" />
-    <?php } ?>
-    <label for="description"><?php echo $entry_description; ?></label>
-  </div>
-  <div class="buttons">
-    <div class="right"><input type="button" value="<?php echo $button_search; ?>" id="button-search" class="button" /></div>
-  </div>
-  <h2><?php echo $text_search; ?></h2>
   <?php if ($products) { ?>
   <div class="product-filter">
     <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
@@ -89,6 +39,7 @@
       <?php if ($product['thumb']) { ?>
       <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
       <?php } ?>
+	  <div class="model"><a href="<?php echo $product['href']; ?>"><?php echo $product['model']; ?></a></div>
       <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
       <div class="description"><?php echo $product['description']; ?></div>
       <?php if ($product['price']) { ?>
@@ -179,7 +130,7 @@ function display(view) {
 			if (price != null) {
 				html += '<div class="price">' + price  + '</div>';
 			}
-						
+			html += '  <div class="model">' + $(element).find('.model').html() + '</div>';						
 			html += '  <div class="name">' + $(element).find('.name').html() + '</div>';
 			html += '  <div class="description">' + $(element).find('.description').html() + '</div>';
 			
@@ -209,7 +160,7 @@ function display(view) {
 			if (image != null) {
 				html += '<div class="image">' + image + '</div>';
 			}
-			
+			html += '<div class="model">' + $(element).find('.model').html() + '</div>';									
 			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
 			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
 			
