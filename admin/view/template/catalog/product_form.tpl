@@ -61,9 +61,23 @@
                 <span class="error"><?php echo $error_model; ?></span>
                 <?php } ?></td>
             </tr>
+			<tr>
+			     <td><?php echo $entry_video; ?></td>
+			     <td><input type="text" name="video" value="<?php echo $video; ?>" /></td>
+			</tr>
             <tr>
               <td><?php echo $entry_sku; ?></td>
               <td><input type="text" name="sku" value="<?php echo $sku; ?>" /></td>
+            </tr>
+			<tr>
+              <td><?php echo $entry_quantity; ?></td>
+              <td><input type="text" name="quantity" value="<?php echo $quantity; ?>" size="2" /></td>
+            </tr>
+			<tr>
+              <td><?php echo $entry_dimension; ?></td>
+              <td><input type="text" name="length" value="<?php echo $length; ?>" size="4" />
+                <input type="text" name="width" value="<?php echo $width; ?>" size="4" />
+                <input type="text" name="height" value="<?php echo $height; ?>" size="4" /></td>
             </tr>
             <tr>
               <td><?php echo $entry_upc; ?></td>
@@ -77,6 +91,18 @@
               <td><?php echo $entry_jan; ?></td>
               <td><input type="text" name="jan" value="<?php echo $jan; ?>" /></td>
             </tr>
+			<tr>
+              <td><?php echo $entry_image; ?></td>
+              <td><div class="image"><img src="<?php echo $thumb; ?>" alt="" id="thumb" /><br />
+                  <input type="hidden" name="image" value="<?php echo $image; ?>" id="image" />
+                  <a onclick="image_upload('image', 'thumb');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('#thumb').attr('src', '<?php echo $no_image; ?>'); $('#image').attr('value', '');"><?php echo $text_clear; ?></a></div></td>
+            </tr>
+			<tr>
+				<td/><td/>
+			</tr>
+			<tr>
+				<td/><td/>
+			</tr>
             <tr>
               <td><?php echo $entry_isbn; ?></td>
               <td><input type="text" name="isbn" value="<?php echo $isbn; ?>" /></td>
@@ -105,10 +131,6 @@
                   <?php } ?>
                   <?php } ?>
                 </select></td>
-            </tr>
-            <tr>
-              <td><?php echo $entry_quantity; ?></td>
-              <td><input type="text" name="quantity" value="<?php echo $quantity; ?>" size="2" /></td>
             </tr>
             <tr>
               <td><?php echo $entry_minimum; ?></td>
@@ -157,24 +179,8 @@
               <td><input type="text" name="keyword" value="<?php echo $keyword; ?>" /></td>
             </tr>
             <tr>
-              <td><?php echo $entry_image; ?></td>
-              <td><div class="image"><img src="<?php echo $thumb; ?>" alt="" id="thumb" /><br />
-                  <input type="hidden" name="image" value="<?php echo $image; ?>" id="image" />
-                  <a onclick="image_upload('image', 'thumb');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('#thumb').attr('src', '<?php echo $no_image; ?>'); $('#image').attr('value', '');"><?php echo $text_clear; ?></a></div></td>
-            </tr>
-			<tr>
-			     <td><?php echo $entry_video; ?></td>
-			     <td><input type="text" name="video" value="<?php echo $video; ?>" /></td>
-			</tr>
-            <tr>
               <td><?php echo $entry_date_available; ?></td>
               <td><input type="text" name="date_available" value="<?php echo $date_available; ?>" size="12" class="date" /></td>
-            </tr>
-            <tr>
-              <td><?php echo $entry_dimension; ?></td>
-              <td><input type="text" name="length" value="<?php echo $length; ?>" size="4" />
-                <input type="text" name="width" value="<?php echo $width; ?>" size="4" />
-                <input type="text" name="height" value="<?php echo $height; ?>" size="4" /></td>
             </tr>
             <tr>
               <td><?php echo $entry_length; ?></td>
