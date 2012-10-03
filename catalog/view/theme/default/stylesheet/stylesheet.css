@@ -1655,6 +1655,9 @@ a.button:hover, input.button:hover {
 	width: 48%;
 }
 /* footer */ 
+#footer-frame {
+	background: #1d1d1d;
+}
 #footer {
 	display: none;
 	clear: both;
@@ -1692,7 +1695,11 @@ a.button:hover, input.button:hover {
 	text-decoration: underline;
 }
 #powered {
-	margin-top: 5px;
+	width:980px;
+	margin: 0 auto;
+	color: #a0a0a0;
+	height: 60px;
+	padding-top: 15px;
 	text-align: right;
 	clear: both;
 }

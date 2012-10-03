@@ -1,3 +1,6 @@
+</div>
+<!-- end of content-->
+<div id="footer-frame">
 <div id="footer">
   <?php if ($informations) { ?>
   <div class="column">
@@ -38,6 +41,6 @@
   </div>
   -->
 </div>
-  <div id="powered"><?php echo $powered; ?></div>
+<div id="powered"><?php echo $powered; ?></div>
 </div>
 </body></html>
