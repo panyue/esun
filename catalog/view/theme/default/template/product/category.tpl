@@ -17,7 +17,6 @@
   </div>
   <?php } ?>
   <?php if ($categories) { ?>
-  <h2><?php echo $text_refine; ?></h2>
   <div class="category-list">
     <?php if (count($categories) <= 5) { ?>
     <ul>
@@ -165,8 +164,8 @@ function display(view) {
 				html += '<div class="image">' + image + '</div>';
 			}
 			
-			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
 			html += '<div class="model">' + $(element).find('.model').html() + '</div>';
+			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
 
 			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
 			
