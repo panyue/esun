@@ -3,7 +3,13 @@
 $_['text_search']       = 'Search';
 $_['text_brand']        = 'Brand';
 $_['text_manufacturer'] = 'Brand:';
-$_['text_model']        = 'Item No.:';
+$_['text_model']        = 'No.:';
+$_['text_sku']                  = 'Packing:';
+$_['text_quantity']             = 'Quantity:';
+$_['text_isbn']                 = 'Products Size:';
+$_['text_upc']                  = 'CMBox Size:';
+$_['text_ean']                  = 'CMMEAS:';
+$_['text_jan']                  = 'CMG.W./N.W.: ';
 $_['text_reward']       = 'Reward Points:'; 
 $_['text_points']       = 'Price in reward points:';
 $_['text_stock']        = 'Availability:';
