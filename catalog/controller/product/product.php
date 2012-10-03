@@ -136,6 +136,13 @@ class ControllerProductProduct extends Controller {
 			$this->data['text_select'] = $this->language->get('text_select');
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$this->data['text_model'] = $this->language->get('text_model');
+			$this->data['text_sku'] = $this->language->get('text_sku');
+			$this->data['text_quantity'] = $this->language->get('text_quantity');
+			$this->data['text_isbn'] = $this->language->get('text_isbn');
+			$this->data['text_upc'] = $this->language->get('text_upc');
+			$this->data['text_ean'] = $this->language->get('text_ean');
+			$this->data['text_jan'] = $this->language->get('text_jan');
+			
 			$this->data['text_reward'] = $this->language->get('text_reward');
 			$this->data['text_points'] = $this->language->get('text_points');	
 			$this->data['text_discount'] = $this->language->get('text_discount');
@@ -177,11 +184,22 @@ class ControllerProductProduct extends Controller {
 			$this->data['product_id'] = $this->request->get['product_id'];
 			$this->data['manufacturer'] = $product_info['manufacturer'];
 			$this->data['manufacturers'] = $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']);
-			$this->data['model'] = $product_info['model'];
-			$this->data['video'] = $product_info['video'];
 			$this->data['reward'] = $product_info['reward'];
 			$this->data['points'] = $product_info['points'];
+			$this->data['model'] = $product_info['model'];
+			$this->data['video'] = $product_info['video'];
 			$this->data['name'] = $product_info['name'];
+			$this->data['sku'] = $product_info['sku'];
+			$this->data['quantity'] = $product_info['quantity'];
+			$this->data['isbn'] = $product_info['isbn'];
+			$this->data['upc'] = $product_info['upc'];
+			$this->data['ean'] = $product_info['ean'];
+			$this->data['jan'] = $product_info['jan'];
+			
+			
+			
+
+			
 			
 			if ($product_info['quantity'] <= 0) {
 				$this->data['stock'] = $product_info['stock_status'];
