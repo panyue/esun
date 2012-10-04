@@ -8,11 +8,11 @@
   <h1><?php echo $heading_title; ?></h1>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <div class="contact-info">
-      <div class="content"><div class="left"><b><?php echo $text_address; ?></b><br />
+      <div class="content"><div class="left">
+	    <b><?php echo $text_address; ?></b><br />
         <?php echo $store; ?><br />
-        <?php echo $address; ?></div>
-      <div class="right">
-        <?php if ($telephone) { ?>
+        <?php echo $address; ?><br /><br />
+		<?php if ($telephone) { ?>
         <b><?php echo $text_telephone; ?></b><br />
         <?php echo $telephone; ?><br />
         <br />
@@ -22,8 +22,33 @@
         <?php echo $fax; ?>
         <?php } ?><br />
 		<br />
+		 <?php if ($emailaddress) { ?>
         <b><?php echo $text_email; ?></b><br />
         <?php echo $emailaddress; ?>
+		<?php } ?>
+	  </div>
+      <div class="right">
+       
+		<?php if ($msn) { ?>
+        <b>MSN</b><br />
+        <?php echo $msn; ?>
+		<?php } ?><br />
+		<br />
+		<?php if ($gtalk) { ?>
+        <b>Gtalk</b><br />
+        <?php echo $gtalk; ?>
+		<?php } ?><br />
+		<br />
+		<?php if ($skype) { ?>
+        <b>SKYPE</b><br />
+        <?php echo $skype; ?>
+		<?php } ?><br />
+		<br />
+		<?php if ($qq) { ?>
+        <b>QQ</b><br />
+        <?php echo $qq; ?>
+		<?php } ?><br />
+		<br />
       </div>
     </div>
     </div>
