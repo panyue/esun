@@ -52,7 +52,11 @@ class ControllerSettingSetting extends Controller {
 		$this->data['entry_address'] = $this->language->get('entry_address');
 		$this->data['entry_email'] = $this->language->get('entry_email');
 		$this->data['entry_telephone'] = $this->language->get('entry_telephone');
-		$this->data['entry_fax'] = $this->language->get('entry_fax');		
+		$this->data['entry_fax'] = $this->language->get('entry_fax');	
+		$this->data['entry_msn'] = $this->language->get('entry_msn');
+		$this->data['entry_qq'] = $this->language->get('entry_qq');
+		$this->data['entry_skype'] = $this->language->get('entry_skype');
+		$this->data['entry_gtalk'] = $this->language->get('entry_gtalk');
 		$this->data['entry_title'] = $this->language->get('entry_title');
 		$this->data['entry_meta_description'] = $this->language->get('entry_meta_description');
 		$this->data['entry_layout'] = $this->language->get('entry_layout');
@@ -339,7 +343,30 @@ class ControllerSettingSetting extends Controller {
 		} else {
 			$this->data['config_fax'] = $this->config->get('config_fax');
 		}
-
+		
+		if (isset($this->request->post['config_skype'])) {
+			$this->data['config_skype'] = $this->request->post['config_skype'];
+		} else {
+			$this->data['config_skype'] = $this->config->get('config_skype');
+		}
+		
+		if (isset($this->request->post['config_msn'])) {
+			$this->data['config_msn'] = $this->request->post['config_msn'];
+		} else {
+			$this->data['config_msn'] = $this->config->get('config_msn');
+		}
+		
+		if (isset($this->request->post['config_qq'])) {
+			$this->data['config_qq'] = $this->request->post['config_qq'];
+		} else {
+			$this->data['config_qq'] = $this->config->get('config_qq');
+		}
+		
+		if (isset($this->request->post['config_gtalk'])) {
+			$this->data['config_gtalk'] = $this->request->post['config_gtalk'];
+		} else {
+			$this->data['config_gtalk'] = $this->config->get('config_gtalk');
+		}
 		if (isset($this->request->post['config_title'])) {
 			$this->data['config_title'] = $this->request->post['config_title'];
 		} else {

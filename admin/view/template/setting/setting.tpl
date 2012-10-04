@@ -58,7 +58,23 @@
             </tr>
             <tr>
               <td><?php echo $entry_fax; ?></td>
-              <td><input type="text" name="config_fax" value="<?php echo $config_fax; ?>" /></td>
+              <td><input type="text" name="config_fax" value="<?php echo $config_fax; ?>" size="40" /></td>
+            </tr>
+			<tr>
+              <td><?php echo $entry_msn; ?></td>
+              <td><input type="text" name="config_msn" value="<?php echo $config_msn; ?>" size="40" /></td>
+            </tr>
+			<tr>
+              <td><?php echo $entry_skype; ?></td>
+              <td><input type="text" name="config_skype" value="<?php echo $config_skype; ?>" size="40" /></td>
+            </tr>
+			<tr>
+              <td><?php echo $entry_qq; ?></td>
+              <td><input type="text" name="config_qq" value="<?php echo $config_qq; ?>" size="40" /></td>
+            </tr>
+			<tr>
+              <td><?php echo $entry_gtalk; ?></td>
+              <td><input type="text" name="config_gtalk" value="<?php echo $config_gtalk; ?>" size="40" /></td>
             </tr>
           </table>
         </div>
