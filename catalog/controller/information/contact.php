@@ -85,6 +85,11 @@ class ControllerInformationContact extends Controller {
     	$this->data['telephone'] = $this->config->get('config_telephone');
     	$this->data['fax'] = $this->config->get('config_fax');
 		$this->data['emailaddress'] = $this->config->get('config_email');
+		$this->data['msn'] = $this->config->get('config_msn');
+		$this->data['qq'] = $this->config->get('config_qq');
+		$this->data['skype'] = $this->config->get('config_skype');
+		$this->data['gtalk'] = $this->config->get('config_gtalk');
+		
     	
 		if (isset($this->request->post['name'])) {
 			$this->data['name'] = $this->request->post['name'];
