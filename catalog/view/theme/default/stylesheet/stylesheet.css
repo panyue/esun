@@ -630,6 +630,7 @@ a.button:hover, input.button:hover {
 	background: url('../image/button-active.png') repeat-x;
 }
 .buttons {
+	display: none;
 	background: #FFFFFF;
 	border: 1px solid #EEEEEE;
 	overflow: auto;
@@ -820,6 +821,7 @@ a.button:hover, input.button:hover {
 #content .content {
 	padding: 10px;
 	overflow: auto;
+	margin-top:15px;
 	margin-bottom: 20px;
 	border: 1px solid #EEEEEE;
 }
@@ -1678,6 +1680,18 @@ a.button:hover, input.button:hover {
 .checkout-product tfoot td {
 	text-align: right;
 	border-bottom: 1px solid #DDDDDD;
+}
+.box-contact > span {
+	display: none;
+	width:20px;
+	height:20px;
+}
+.box-contact > b {
+	color:#ef7d00;
+}
+
+.box-contact{
+	padding: 10px;
 }
 .contact-info {
 	overflow: auto;
