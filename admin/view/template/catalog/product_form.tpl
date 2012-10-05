@@ -16,42 +16,6 @@
     <div class="content">
       <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><a href="#tab-links"><?php echo $tab_links; ?></a><a href="#tab-attribute"><?php echo $tab_attribute; ?></a><a href="#tab-option"><?php echo $tab_option; ?></a><a href="#tab-discount"><?php echo $tab_discount; ?></a><a href="#tab-special"><?php echo $tab_special; ?></a><a href="#tab-image"><?php echo $tab_image; ?></a><a href="#tab-reward"><?php echo $tab_reward; ?></a><a href="#tab-design"><?php echo $tab_design; ?></a></div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
-        <div id="tab-general">
-          <div id="languages" class="htabs">
-            <?php foreach ($languages as $language) { ?>
-            <a href="#language<?php echo $language['language_id']; ?>"><img src="view/image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /> <?php echo $language['name']; ?></a>
-            <?php } ?>
-          </div>
-          <?php foreach ($languages as $language) { ?>
-          <div id="language<?php echo $language['language_id']; ?>">
-            <table class="form">
-              <tr>
-                <td><span class="required">*</span> <?php echo $entry_name; ?></td>
-                <td><input type="text" name="product_description[<?php echo $language['language_id']; ?>][name]" size="100" value="<?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['name'] : ''; ?>" />
-                  <?php if (isset($error_name[$language['language_id']])) { ?>
-                  <span class="error"><?php echo $error_name[$language['language_id']]; ?></span>
-                  <?php } ?></td>
-              </tr>
-              <tr>
-                <td><?php echo $entry_meta_description; ?></td>
-                <td><textarea name="product_description[<?php echo $language['language_id']; ?>][meta_description]" cols="40" rows="5"><?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['meta_description'] : ''; ?></textarea></td>
-              </tr>
-              <tr>
-                <td><?php echo $entry_meta_keyword; ?></td>
-                <td><textarea name="product_description[<?php echo $language['language_id']; ?>][meta_keyword]" cols="40" rows="5"><?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['meta_keyword'] : ''; ?></textarea></td>
-              </tr>
-              <tr>
-                <td><?php echo $entry_description; ?></td>
-                <td><textarea name="product_description[<?php echo $language['language_id']; ?>][description]" id="description<?php echo $language['language_id']; ?>"><?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['description'] : ''; ?></textarea></td>
-              </tr>
-              <tr>
-                <td><?php echo $entry_tag; ?></td>
-                <td><input type="text" name="product_description[<?php echo $language['language_id']; ?>][tag]" value="<?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['tag'] : ''; ?>" size="80" /></td>
-              </tr>
-            </table>
-          </div>
-          <?php } ?>
-        </div>
         <div id="tab-data">
           <table class="form">
             <tr>
@@ -60,6 +24,18 @@
                 <?php if ($error_model) { ?>
                 <span class="error"><?php echo $error_model; ?></span>
                 <?php } ?></td>
+            </tr>
+			<tr>
+              <td><?php echo $entry_status; ?></td>
+              <td><select name="status">
+                  <?php if ($status) { ?>
+                  <option value="1" selected="selected"><?php echo $text_enabled; ?></option>
+                  <option value="0"><?php echo $text_disabled; ?></option>
+                  <?php } else { ?>
+                  <option value="1"><?php echo $text_enabled; ?></option>
+                  <option value="0" selected="selected"><?php echo $text_disabled; ?></option>
+                  <?php } ?>
+                </select></td>
             </tr>
 			<tr>
 			     <td><?php echo $entry_video; ?></td>
@@ -211,24 +187,48 @@
                 </select></td>
             </tr>
             <tr>
-              <td><?php echo $entry_status; ?></td>
-              <td><select name="status">
-                  <?php if ($status) { ?>
-                  <option value="1" selected="selected"><?php echo $text_enabled; ?></option>
-                  <option value="0"><?php echo $text_disabled; ?></option>
-                  <?php } else { ?>
-                  <option value="1"><?php echo $text_enabled; ?></option>
-                  <option value="0" selected="selected"><?php echo $text_disabled; ?></option>
-                  <?php } ?>
-                </select></td>
-            </tr>
-            <tr>
               <td><?php echo $entry_sort_order; ?></td>
               <td><input type="text" name="sort_order" value="<?php echo $sort_order; ?>" size="2" /></td>
             </tr>
           </table>
         </div>
-        <div id="tab-links">
+        <div id="tab-general">
+          <div id="languages" class="htabs">
+            <?php foreach ($languages as $language) { ?>
+            <a href="#language<?php echo $language['language_id']; ?>"><img src="view/image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /> <?php echo $language['name']; ?></a>
+            <?php } ?>
+          </div>
+          <?php foreach ($languages as $language) { ?>
+          <div id="language<?php echo $language['language_id']; ?>">
+            <table class="form">
+              <tr>
+                <td><span class="required">*</span> <?php echo $entry_name; ?></td>
+                <td><input type="text" name="product_description[<?php echo $language['language_id']; ?>][name]" size="100" value="<?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['name'] : ''; ?>" />
+                  <?php if (isset($error_name[$language['language_id']])) { ?>
+                  <span class="error"><?php echo $error_name[$language['language_id']]; ?></span>
+                  <?php } ?></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_meta_description; ?></td>
+                <td><textarea name="product_description[<?php echo $language['language_id']; ?>][meta_description]" cols="40" rows="5"><?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['meta_description'] : ''; ?></textarea></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_meta_keyword; ?></td>
+                <td><textarea name="product_description[<?php echo $language['language_id']; ?>][meta_keyword]" cols="40" rows="5"><?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['meta_keyword'] : ''; ?></textarea></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?></td>
+                <td><textarea name="product_description[<?php echo $language['language_id']; ?>][description]" id="description<?php echo $language['language_id']; ?>"><?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['description'] : ''; ?></textarea></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_tag; ?></td>
+                <td><input type="text" name="product_description[<?php echo $language['language_id']; ?>][tag]" value="<?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['tag'] : ''; ?>" size="80" /></td>
+              </tr>
+            </table>
+          </div>
+          <?php } ?>
+        </div>
+		<div id="tab-links">
           <table class="form">
             <tr>
               <td><?php echo $entry_manufacturer; ?></td>
