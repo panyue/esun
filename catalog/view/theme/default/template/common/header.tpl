@@ -101,7 +101,7 @@ DD_belatedPNG.fix('#logo img');
     <?php } ?>
 	<?php if ($informations) { ?>
 		<?php foreach ($informations as $information) { ?>
-			<?php if ($information['title'] == 'About Us') { ?>
+			<?php if ($information['id'] == '4') { ?>
 				<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
 			<?php } ?>
 		<?php } ?>
