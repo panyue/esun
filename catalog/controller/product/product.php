@@ -198,6 +198,15 @@ class ControllerProductProduct extends Controller {
 			$this->data['ean'] = $product_info['ean'];
 			$this->data['jan'] = $product_info['jan'];
 			
+			$pic = "image/data/product/" . $product_info['model'] . ".jpg";
+			
+			if (file_exists($pic)) {
+				$this->data['pic'] = $pic;	
+			} else {
+				$this->data['pic'] = false;
+			}
+			
+			
 			
 			
 

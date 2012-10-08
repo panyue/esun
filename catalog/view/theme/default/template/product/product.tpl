@@ -51,6 +51,7 @@
         <td><?php echo $text_ean; ?></td> <td> <?php echo $ean; ?></td>
         <?php } ?>
 	</tr>
+
 	</table>
         <?php if ($manufacturer) { ?>
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
@@ -265,6 +266,9 @@
     <?php } ?>
   </div>
   <div id="tab-description" class="tab-content"><?php echo $description; ?></div>
+  <?php if ($pic) {?>
+	<image src= <?php echo $pic; ?>>
+  <?php }?>
   <?php if ($attribute_groups) { ?>
   <div id="tab-attribute" class="tab-content">
     <table class="attribute">
