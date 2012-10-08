@@ -4,6 +4,7 @@ $_['text_search']       = 'Search';
 $_['text_brand']        = 'Brand';
 $_['text_manufacturer'] = 'Brand:';
 $_['text_model']        = 'No.:';
+$_['text_name']         = 'Name:';
 $_['text_sku']                  = 'Packing:';
 $_['text_quantity']             = 'Quantity:';
 $_['text_isbn']                 = 'Products Size:';

@@ -4,6 +4,7 @@ $_['text_search']         = '搜索';
 $_['text_brand']          = '品牌';
 $_['text_manufacturer']   = '品  牌：';
 $_['text_model']          = '货  号：';
+$_['text_name']           = '名  称：';
 $_['text_sku']                  = '包  装：';
 $_['text_quantity']             = '数  量：';
 $_['text_isbn']                 = '产品尺寸：';
