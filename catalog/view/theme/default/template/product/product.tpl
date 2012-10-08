@@ -18,6 +18,9 @@
 	  <tr>
 		<td><?php echo $text_model; ?></td> <td> <?php echo $model; ?></td>
 	  </tr>
+      <tr>
+		<td><?php echo $text_name; ?></td> <td> <?php echo $name; ?></td>
+	  </tr>
 	  <tr>
 		<?php if ($sku) { ?>
         <td><?php echo $text_sku; ?></td> <td> <?php echo $sku; ?></td>
