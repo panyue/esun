@@ -28,7 +28,7 @@
 	</tr>
 	<tr>
 		<?php if ($quantity) { ?>
-        <td><?php echo $text_quantity; ?></td> <td> <?php echo $quantity; ?></td>
+        <td><?php echo $text_quantity; ?></td> <td> <?php echo $quantity; ?> PCS</td>
         <?php } ?>
 	</tr>
 	  <tr>
