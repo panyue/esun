@@ -46,6 +46,9 @@
                 <span class="error"><?php echo $error_owner; ?></span>
                 <?php } ?></td>
             </tr>
+			<tr>
+				<td>中国总部</td><td/>
+			</tr>
             <tr>
               <td><span class="required">*</span> <?php echo $entry_address; ?></td>
               <td><textarea name="config_address" cols="40" rows="5"><?php echo $config_address; ?></textarea>
@@ -70,6 +73,27 @@
             <tr>
               <td><?php echo $entry_fax; ?></td>
               <td><input type="text" name="config_fax" value="<?php echo $config_fax; ?>" /></td>
+            </tr>
+			<tr>
+				<td>德国分部</td><td/>
+			</tr>
+			<tr>
+              <td><span class="required">*</span> <?php echo $entry_address_de; ?></td>
+              <td><textarea name="config_address_de" cols="40" rows="5"><?php echo $config_address_de; ?></textarea>
+                <?php if ($error_address_de) { ?>
+                <span class="error"><?php echo $error_address_de; ?></span>
+                <?php } ?></td>
+            </tr>
+            <tr>
+              <td><span class="required">*</span> <?php echo $entry_telephone_de; ?></td>
+              <td><input type="text" name="config_telephone" value="<?php echo $config_telephone_de; ?>" />
+                <?php if ($error_telephone_de) { ?>
+                <span class="error"><?php echo $error_telephone_de; ?></span>
+                <?php } ?></td>
+            </tr>
+            <tr>
+              <td><?php echo $entry_fax_de; ?></td>
+              <td><input type="text" name="config_fax_de" value="<?php echo $config_fax_de; ?>" /></td>
             </tr>
           </table>
         </div>
