@@ -828,11 +828,13 @@ a.button:hover, input.button:hover {
 }
 #content .content .left {
 	float: left;
-	width: 49%;
+	width: 33%;
 }
 #content .content .right {
-	float: right;
-	width: 49%;
+	float: left;
+	width: 20%;
+	border-left: #eee 1px dashed;
+	padding-left: 15px;
 }
 /* category */
 .category-info {

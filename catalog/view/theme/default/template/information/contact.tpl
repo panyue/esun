@@ -9,23 +9,32 @@
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <div class="contact-info">
       <div class="content"><div class="left">
+	  	<b><?php echo $text_department_cn; ?></b><br />
 	    <b><?php echo $text_address; ?></b><br />
-        <?php echo $store; ?><br />
-        <?php echo $address; ?><br /><br />
-		<?php if ($telephone) { ?>
+        <?php echo $content_address_cn; ?><br /><br />
         <b><?php echo $text_telephone; ?></b><br />
-        <?php echo $telephone; ?><br />
+        <?php echo $content_telephone_cn; ?><br />
         <br />
-        <?php } ?>
-        <?php if ($fax) { ?>
         <b><?php echo $text_fax; ?></b><br />
-        <?php echo $fax; ?>
-        <?php } ?><br />
+        <?php echo $content_fax_cn; ?>
+        <br />
 		<br />
-		 <?php if ($emailaddress) { ?>
         <b><?php echo $text_email; ?></b><br />
-        <?php echo $emailaddress; ?>
-		<?php } ?>
+        <?php echo $content_email_cn; ?>
+	  </div>
+      <div class="left">
+	  	<b><?php echo $text_department_de; ?></b><br />
+	    <b><?php echo $text_address; ?></b><br />
+        <?php echo $content_address_de; ?><br /><br />
+        <b><?php echo $text_telephone; ?></b><br />
+        <?php echo $content_telephone_de; ?><br />
+        <br />
+        <b><?php echo $text_fax; ?></b><br />
+        <?php echo $content_fax_de; ?>
+        <br />
+		<br />
+        <b><?php echo $text_email; ?></b><br />
+        <?php echo $content_email_de; ?>
 	  </div>
       <div class="right">
        
