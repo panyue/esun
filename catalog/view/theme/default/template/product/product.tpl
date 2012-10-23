@@ -33,22 +33,22 @@
 	</tr>
 	  <tr>
 		<?php if ($isbn) { ?>
-        <td><?php echo $text_isbn; ?></td> <td> <?php echo $isbn; ?></td>
+        <td><?php echo $text_isbn; ?></td> <td> <?php echo $isbn; ?> cm</td>
         <?php } ?>
 	</tr>
 	  <tr>
 		<?php if ($upc) { ?>
-        <td><?php echo $text_upc; ?></td> <td> <?php echo $upc; ?></td>
+        <td><?php echo $text_upc; ?></td> <td> <?php echo $upc; ?> cm</td>
         <?php } ?>
 	  </tr>
 	  <tr>
 		<?php if ($jan) { ?>
-        <td><?php echo $text_jan; ?></td> <td> <?php echo $jan; ?></td>
+        <td><?php echo $text_jan; ?></td> <td> <?php echo $jan; ?> kgs</td>
         <?php } ?>
 	</tr>
 	  <tr>
 		<?php if ($ean) { ?>
-        <td><?php echo $text_ean; ?></td> <td> <?php echo $ean; ?></td>
+        <td><?php echo $text_ean; ?></td> <td> <?php echo $ean; ?> cm</td>
         <?php } ?>
 	</tr>
 
