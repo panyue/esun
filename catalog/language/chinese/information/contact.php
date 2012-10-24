@@ -11,21 +11,19 @@ $_['text_telephone'] = '手机：';
 $_['text_fax']       = '传真：';
 $_['text_message']   = '<p>您的查询已发送！</p>';
 $_['text_submit']    = '提交';
-$_['text_department_cn']    = '中国总部';
-$_['text_department_de']    = '欧洲总部';
-
-
-
+$_['text_department_cn']    = 'ESUN中国总部';
+$_['text_department_de']    = 'ESUN欧洲总部';
 
 // content
-$_['content_address_cn'] = '易翔中国<br />广东省汕头市澄海区梅陇路<br />邮编：515835';
-$_['content_telephone_cn'] = '（86）133-5308-6286';
-$_['content_fax_cn'] = '（86）0754-8822-8288';
-$_['content_address_de'] = '易翔中国<br />广东省汕头市澄海区梅陇路<br />邮编：515835';
-$_['content_telephone_de'] = '（86）133-5308-6286';
-$_['content_fax_de'] = '（86）0754-8822-8288';
+$_['content_address_cn'] = '广东省汕头市澄海区梅陇路<br />邮编：515835';
+$_['content_telephone_cn'] = '(86)133-5308-6286';
+$_['content_fax_cn'] = '(86)0754-8639-4688';
+$_['content_address_de'] = 'Ehndorfer街215号,新明斯特市<br />  德国,邮编：24537';
+$_['content_telephone_de'] = '+49-(0)-4321-8535679';
+$_['content_fax_de'] = '+49-(0)-4321-8535682';
 $_['content_email_de'] = 'esun@gmail.com';
 $_['content_email_cn'] = 'esun@gmail.com';
+
 
 // Entry Fields
 $_['entry_name']     = '您的姓名：';

@@ -10,16 +10,16 @@ $_['text_email']         = 'E-Mail:';
 $_['text_telephone']     = 'Telefon:';
 $_['text_fax']           = 'Fax:';
 $_['text_message']       = '<p>Die Anfrage wurde erfolgreich versendet!</p>';
-$_['text_department_cn']    = '中国总部';
-$_['text_department_de']    = '欧洲总部';
+$_['text_department_cn']    = 'ESUN China';
+$_['text_department_de']    = 'ESUN Europe';
 
 // content
-$_['content_address_cn'] = '易翔中国<br />广东省汕头市澄海区梅陇路<br />邮编：515835';
-$_['content_telephone_cn'] = '（86）133-5308-6286';
-$_['content_fax_cn'] = '（86）0754-8822-8288';
-$_['content_address_de'] = '易翔中国<br />广东省汕头市澄海区梅陇路<br />邮编：515835';
-$_['content_telephone_de'] = '（86）133-5308-6286';
-$_['content_fax_de'] = '（86）0754-8822-8288';
+$_['content_address_cn'] = 'Meilong Strasse 4, Chenghai Bezirk<br />Shantou, Guangdong<br />V.R.China 515835';
+$_['content_telephone_cn'] = '(86)133-5308-6286';
+$_['content_fax_cn'] = '(86)0754-8639-4688';
+$_['content_address_de'] = 'Ehndorfer Strasse 215<br />24537  Neumuenster  Deutschland';
+$_['content_telephone_de'] = '+49-(0)-4321-8535679';
+$_['content_fax_de'] = '+49-(0)-4321-8535682';
 $_['content_email_de'] = 'esun@gmail.com';
 $_['content_email_cn'] = 'esun@gmail.com';
 
