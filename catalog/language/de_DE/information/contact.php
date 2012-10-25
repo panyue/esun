@@ -20,8 +20,8 @@ $_['content_fax_cn'] = '(86)0754-8639-4688';
 $_['content_address_de'] = 'Ehndorfer Strasse 215<br />24537  Neumuenster  Deutschland';
 $_['content_telephone_de'] = '+49-(0)-4321-8535679';
 $_['content_fax_de'] = '+49-(0)-4321-8535682';
-$_['content_email_de'] = 'esun@gmail.com';
-$_['content_email_cn'] = 'esun@gmail.com';
+$_['content_email_de'] = 'info@esuneurope.com';
+$_['content_email_cn'] = 'info@esuneurope.com';
 
 
 // Entry Fields

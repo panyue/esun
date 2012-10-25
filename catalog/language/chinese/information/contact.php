@@ -18,11 +18,11 @@ $_['text_department_de']    = 'ESUN欧洲总部';
 $_['content_address_cn'] = '广东省汕头市澄海区美龙路4巷<br />中国，邮编：515835';
 $_['content_telephone_cn'] = '(86)133-5308-6286';
 $_['content_fax_cn'] = '(86)0754-8639-4688';
-$_['content_address_de'] = 'Ehndorfer街215号,新明斯特市<br />  德国,邮编：24537';
+$_['content_address_de'] = 'Ehndorfer Street 215 <br />24537  Neumuenster  Germany';
 $_['content_telephone_de'] = '+49-(0)-4321-8535679';
 $_['content_fax_de'] = '+49-(0)-4321-8535682';
-$_['content_email_de'] = 'esun@gmail.com';
-$_['content_email_cn'] = 'esun@gmail.com';
+$_['content_email_de'] = 'info@esuneurope.com';
+$_['content_email_cn'] = 'info@esuneurope.com';
 
 
 // Entry Fields
