@@ -45,6 +45,18 @@ class ControllerInformationContact extends Controller {
     	$this->data['text_location'] = $this->language->get('text_location');
 		$this->data['text_contact'] = $this->language->get('text_contact');
 		$this->data['text_address'] = $this->language->get('text_address');
+		$this->data['text_department_cn'] = $this->language->get('text_department_cn');
+		$this->data['text_department_de'] = $this->language->get('text_department_de');
+		$this->data['content_address_cn'] = $this->language->get('content_address_cn');
+		$this->data['content_address_de'] = $this->language->get('content_address_de');
+		$this->data['content_telephone_de'] = $this->language->get('content_telephone_de');
+		$this->data['content_telephone_cn'] = $this->language->get('content_telephone_cn');
+		$this->data['content_fax_cn'] = $this->language->get('content_fax_cn');
+		$this->data['content_fax_de'] = $this->language->get('content_fax_de');
+		$this->data['content_email_cn'] = $this->language->get('content_email_cn');
+		$this->data['content_email_de'] = $this->language->get('content_email_de');
+		
+		
     	$this->data['text_telephone'] = $this->language->get('text_telephone');
     	$this->data['text_fax'] = $this->language->get('text_fax');
 		$this->data['text_email'] = $this->language->get('text_email');
