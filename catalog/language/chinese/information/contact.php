@@ -15,7 +15,7 @@ $_['text_department_cn']    = 'ESUN中国总部';
 $_['text_department_de']    = 'ESUN欧洲总部';
 
 // content
-$_['content_address_cn'] = '广东省汕头市澄海区梅陇路<br />邮编：515835';
+$_['content_address_cn'] = '广东省汕头市澄海区美龙路4巷<br />中国，邮编：515835';
 $_['content_telephone_cn'] = '(86)133-5308-6286';
 $_['content_fax_cn'] = '(86)0754-8639-4688';
 $_['content_address_de'] = 'Ehndorfer街215号,新明斯特市<br />  德国,邮编：24537';
